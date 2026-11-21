@@ -362,6 +362,21 @@ p {
   margin-bottom: 0;
 }
 
+.role-project {
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.role-points {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.role-points li + li {
+  margin-top: 4px;
+}
+
 .entry-list,
 .plain-list {
   margin: 0;

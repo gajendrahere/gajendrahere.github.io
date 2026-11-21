@@ -95,7 +95,10 @@ const experience = portfolio.experience.map((item) => `
     <div class="desc">
       <h3>${escapeHTML(item.company)}</h3>
       <p class="entry-subtitle">${escapeHTML(item.title)}${item.group ? ` · ${escapeHTML(item.group)}` : ""}</p>
-      <p>${escapeHTML(item.description)}</p>
+      ${item.project ? `<p class="role-project">${escapeHTML(item.project)}</p>` : ""}
+      ${Array.isArray(item.description)
+        ? `<ul class="role-points">${item.description.map((point) => `<li>${escapeHTML(point)}</li>`).join("")}</ul>`
+        : `<p>${escapeHTML(item.description)}</p>`}
     </div>
   </article>`).join("");
 
