@@ -13,6 +13,7 @@ export const portfolio = {
     logo: "/assets/bread-financial-logo.png",
       title: "Model Development Analyst",
     //   group: "Corporate and Capital Planning",
+      project: "Credit Risk & PPNR Forecasting Models",
       description: [
         "Developed and documented account- and segment-level credit risk models aligned with PPNR frameworks.",
         "Built gross loss, finance charge, and late fee forecasting components within AR rollforward models.",
