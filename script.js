@@ -141,9 +141,9 @@ document.querySelector("#site-content").innerHTML = [
   experienceSection,
   renderSection("education", "Education", `<div class="timeline education-timeline">${education}</div>`),
   renderSection("blog", "Blog", blog),
-  renderSection("projects", "Selected Projects", projects),
-  renderSection("interests", "Interests", `<ul class="plain-list">${portfolio.interests.map((interest) => `<li>${escapeHTML(interest)}</li>`).join("")}</ul>`),
-  renderSection("tools", "Technical Skills", skills),
+//   renderSection("projects", "Selected Projects", projects),
+//   renderSection("interests", "Interests", `<ul class="plain-list">${portfolio.interests.map((interest) => `<li>${escapeHTML(interest)}</li>`).join("")}</ul>`),
+//   renderSection("tools", "Technical Skills", skills),
   renderSection("contact", "Contact", contact),
 ].join("");
 
@@ -157,4 +157,4 @@ document.querySelectorAll(".org-logo").forEach((logo) => {
   if (logo.complete && logo.naturalWidth > 0) revealLogo();
 });
 
-document.querySelector("#year").textContent = String(new Date().getFullYear());
+// document.querySelector("#year").textContent = String(new Date().getFullYear());

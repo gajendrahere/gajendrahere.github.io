@@ -33,8 +33,8 @@ export const portfolio = {
     { category: "Data Analytics", title: "Project details to be added", description: "Add the problem, approach, and outcome.", technologies: "Add technologies", github: "", demo: "" },
   ],
   articles: [
-    { date: "31 Oct, 2026", title: "Machine Learning Notes", url: "https://bearblog.dev/gajendrasingh/" },
-    { date: "18 Jun, 2026", title: "An Introduction to Financial Risk Modelling", url: "https://bearblog.dev/gajendrasingh/" },
+    // { date: "31 Oct, 2026", title: "Machine Learning Notes", url: "https://bearblog.dev/gajendrasingh/" },
+    // { date: "18 Jun, 2026", title: "An Introduction to Financial Risk Modelling", url: "https://bearblog.dev/gajendrasingh/" },
     { date: "03 Mar, 2026", title: "Things I Am Learning About AI", url: "https://bearblog.dev/gajendrasingh/" },
   ],
   skills: [
