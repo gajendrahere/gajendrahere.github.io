@@ -32,7 +32,8 @@ const safeURL = (value) => /^(https?:|mailto:)/i.test(value);
 
 function renderLink(label, url, fallback = "URL to add") {
   if (url && safeURL(url)) {
-    return `<a href="${escapeHTML(url)}">${escapeHTML(label)}</a>`;
+    const newTab = /^https?:/i.test(url) ? ' target="_blank" rel="noopener noreferrer"' : "";
+    return `<a href="${escapeHTML(url)}"${newTab}>${escapeHTML(label)}</a>`;
   }
   return `<span>${escapeHTML(label)} <span class="placeholder">(${escapeHTML(fallback)})</span></span>`;
 }
