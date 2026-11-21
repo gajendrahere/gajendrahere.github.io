@@ -1,4 +1,4 @@
-import { portfolio } from "/data/portfolio.js?v=5";
+import { portfolio } from "/data/portfolio.js?v=6";
 
 const portrait = document.querySelector(".portrait");
 const showPortrait = () => {
@@ -131,7 +131,7 @@ const education = portfolio.education.map((item) => `
     </div>
     <div class="desc education-desc">
       <h3 class="education-degree">${escapeHTML(item.degree)}</h3>
-      <p class="education-institution">${escapeHTML(item.institution)}</p>
+      <p class="education-institution">${item.url ? renderLink(item.institution, item.url) : escapeHTML(item.institution)}</p>
       <p class="education-specialization">${escapeHTML(item.specialization)}</p>
     </div>
   </article>`).join("");

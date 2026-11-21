@@ -68,6 +68,7 @@ export const portfolio = {
     {
       degree: "M-Tech",
       institution: "IIT Kharagpur",
+      url: "https://www.iitkgp.ac.in/",
       logo: "/assets/mtech-logo.png",
       specialization: "Infrastructure Design and Management",
       dates: "2022–2024",
@@ -75,6 +76,7 @@ export const portfolio = {
     {
       degree: "B-Tech",
       institution: "Government Engineering College, Bikaner",
+      url: "https://www.ecb.ac.in/",
       logo: "/assets/btech-logo.png",
       specialization: "Civil Engineering",
       dates: "2017–2021",
