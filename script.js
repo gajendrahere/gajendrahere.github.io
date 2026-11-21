@@ -1,4 +1,4 @@
-import { portfolio } from "/data/portfolio.js?v=4";
+import { portfolio } from "/data/portfolio.js?v=5";
 
 const portrait = document.querySelector(".portrait");
 const showPortrait = () => {
@@ -93,7 +93,7 @@ const experience = portfolio.experience.map((item) => `
       </span>
     </div>
     <div class="desc">
-      <h3>${escapeHTML(item.company)}</h3>
+      <h3>${item.url ? renderLink(item.company, item.url) : escapeHTML(item.company)}</h3>
       <p class="entry-subtitle">${escapeHTML(item.title)}${item.group ? ` · ${escapeHTML(item.group)}` : ""}</p>
       ${item.project ? `<p class="role-project">${escapeHTML(item.project)}</p>` : ""}
       ${Array.isArray(item.description)

@@ -10,6 +10,7 @@ export const portfolio = {
       dates: "2025/09–Present",
     //   dateNote: "Confirm dates",
       company: "Bread Financial",
+      url: "https://www.breadfinancial.com/",
     logo: "/assets/bread-financial-logo.png",
       title: "Model Development Analyst",
     //   group: "Corporate and Capital Planning",
@@ -30,6 +31,7 @@ export const portfolio = {
     {
       dates: "2024/05–2025/09",
       company: "Affine",
+      url: "https://affine.ai/",
       logo: "/assets/affine-logo.png",
       title: "Business Analyst (Data Science)",
       group: "",
